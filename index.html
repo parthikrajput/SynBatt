@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/fonts/font.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header class="relative z-30">
+        <div class="h-navigition bg-blue">
+            <div class="container">
+                <div
+                    class="h-navigition-wrapper *:text-body h-[50px]  flex flex-wrap justify-end items-center gap-[20px] xsm:gap-[30px] text-gray-light">
+                    <a href="#" aria-label="">Newsletter</a>
+                    <a href="#" aria-label="">Kontakt</a>
+                    <a href="#" aria-label="">English</a>
+                </div>
+            </div>
+        </div>
+        <div class="header bg-white py-5">
+            <div class="container">
+                <div class="h-wrapper flex items-center justify-between">
+                    <div class="hf-logo flex-none flex items-center gap-5">
+                        <div class="menu-icon lg:hidden">
+                            <svg xmlns="http: //www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 448 512">
+                                <path
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                                    fill="#082045"></path>
+                            </svg>
+                        </div>
+                        <a href="index.html" aria-label="index"
+                            class="hf-logo w-[110px] sm:w-[158px] lg:w-[120px] xxl:w-[140px] xl:w-[158px]">
+                            <img src="./src/img/SynBatt-Logo.png" alt="SynBatt-Logo">
+                        </a>
+                    </div>
+                    <nav
+                        class="fixed top-0 left-[-1000px] w-[300px] h-screen bg-blue z-40 transition-all duration-1000 ease-in-out lg:w-auto lg:left-0 lg:relative lg:h-auto lg:bg-transparent">
+                        <ul
+                            class="flex lg:items-center gap-[24px] lg:gap-[12px] xxl:gap-[24px] xl:gap-[32px] *:text-body text-white lg:text-gray-dark lg:flex-row flex-col px-4 pt-20 lg:pl-0 lg:pt-0">
+                            <li id="toggle-menu"
+                                class="menu-item group flex items-center lg:items-center flex-wrap justify-between lg:justify-normal gap-[16px] lg:gap-[7px] relative cursor-pointer">
+                                <a aria-label="" href="#">Förderinitiative</a>
+                                <ul id="submenu"
+                                    class="sub-menu lg:absolute lg:w-[150px] w-full lg:p-4 pl-4 top-[100%] left-0 bg-blue text-body text-white capitalize shadow-custom text-black-100 space-y-4 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible lg:transition-all lg:duration-300 hidden lg:block">
+                                    <li><a aria-label="" href="#">home 1</a></li>
+                                    <li><a aria-label="" href="#">home 2</a></li>
+                                    <li><a aria-label="" href="#">home 3</a></li>
+                                    <li><a aria-label="" href="#">home 4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a aria-label="" href="#">Projekte</a>
+                            </li>
+                            <li>
+                                <a aria-label="" href="#">Veranstaltungen</a>
+                            </li>
+                            <li>
+                                <a aria-label="" href="#">
+                                    Beirat Batterieforschung DE
+                                </a>
+                            </li>
+                            <li id="toggle-menu"
+                                class="menu-item group flex items-center lg:items-center flex-wrap justify-between lg:justify-normal gap-[16px] lg:gap-[7px] relative cursor-pointer">
+                                <a aria-label="" href="#">
+                                    Förderung
+                                </a>
+                                <ul id="submenu"
+                                    class="sub-menu lg:absolute lg:w-[150px] w-full lg:p-4 pl-4 top-[100%] left-0 bg-blue text-body text-white capitalize shadow-custom text-black-100 space-y-4 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible lg:transition-all lg:duration-300 hidden lg:block">
+                                    <li><a aria-label="" href="#">home 1</a></li>
+                                    <li><a aria-label="" href="#">home 2</a></li>
+                                    <li><a aria-label="" href="#">home 3</a></li>
+                                    <li><a aria-label="" href="#">home 4</a></li>
+                                </ul>
+                            </li>
+                            <li id="toggle-menu"
+                                class="menu-item group flex items-center lg:items-center flex-wrap justify-between lg:justify-normal gap-[16px] lg:gap-[7px] relative cursor-pointer">
+                                <a aria-label="" href="#">
+                                    Service
+                                </a>
+                                <ul id="submenu"
+                                    class="sub-menu lg:absolute lg:w-[150px] w-full lg:p-4 pl-4 top-[100%] left-0 bg-blue text-body text-white capitalize shadow-custom text-black-100 space-y-4 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible lg:transition-all lg:duration-300 hidden lg:block">
+                                    <li><a aria-label="" href="#">home 1</a></li>
+                                    <li><a aria-label="" href="#">home 2</a></li>
+                                    <li><a aria-label="" href="#">home 3</a></li>
+                                    <li><a aria-label="" href="#">home 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="close-icon lg:hidden absolute top-5 right-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 448 512">
+                                <path
+                                    d="M342.6 150.6a32 32 0 0 0-45.3-45.3L192 210.7 86.6 105.4a32 32 0 0 0-45.3 45.3L146.7 256 41.4 361.4a32 32 0 0 0 45.3 45.3L192 301.3l105.4 105.3a32 32 0 0 0 45.3-45.3L237.3 256l105.3-105.4z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </div>
+                    </nav>
+                    <a href="#" aria-label="" class="hs-logo w-[100px] xsm:w-[119px] flex-none">
+                        <img src="./src/img/sec-logo.png" alt="sec-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20">
+            <div class="container">
+                <div class="hero-wrapper flex items-center gap-8 md:gap-10 lg:gap-16 flex-col-reverse lg:flex-row">
+                    <div class="hero-text space-y-6 md:space-y-8 w-full lg:w-[calc(50%-32px)]">
+                        <div class="hero-title text-p text-gray-dark space-y-4 md:space-y-6">
+                            <h1
+                                class="text-res1_h2 sm:text-res_h2 md:text-h2 lg:text-res_h1 xl:text-h1 text-black-light">
+                                Willkommen beim SynBatt Projekt!</h1>
+                            <div class="text text-p text-gray-dark space-y-4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                    eros
+                                    elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                                    ut
+                                    commodo diam libero vitae erat.</p>
+                            </div>
+                        </div>
+                        <a href="#" aria-label="" class="btn">Erfahre mehr über die Projekte</a>
+                    </div>
+                    <div class="hero-bg w-full sm:w-3/4 md:w-1/2 lg:w-[calc(50%-32px)]">
+                        <img src="./src/img/hero.png" alt="hero bg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="battery py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20">
+            <div class="container">
+                <div class="battery-wrapper flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-16 xl:gap-20">
+                    <div class="title text-center w-full sm:w-5/6 md:w-4/5 xxl:w-3/4 mx-auto">
+                        <h2
+                            class="xxl:text-h2 lg:text-res_h2 md:text-res1_h2 text-h3 text-black-light xsm:break-normal break-all">
+                            Der Unterschied
+                            zwischen Batteriezellproduktion und Green
+                            Battery</h2>
+                    </div>
+                    <div class="battery-boxs flex items-stretch flex-wrap gap-5 md:gap-8 lg:gap-12">
+                        <div
+                            class="battery-box w-full md:w-[calc(50%-16px)] lg:w-[calc(50%-24px)] p-5 sm:p-7 md:p-10 flex flex-col gap-6 rounded-lg bg-green-very_light text-center">
+                            <div class="mx-auto">
+                                <img src="./src/img/b-1.png" alt="battery" class="w-[300px] h-[80px] object-contain">
+                            </div>
+                            <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Nam liber tempor cum soluta
+                            </h3>
+                            <div class="text space-y-4 text-p text-gray-dark text-center flex-1">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+                            </div>
+                            <a href="#" aria-label="" class="btn-link mx-auto">Mehr Erfahren <svg width="8" height="12"
+                                    viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                        fill="#07C3AB" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div
+                            class="battery-box w-full md:w-[calc(50%-16px)] lg:w-[calc(50%-24px)] p-5 sm:p-7 md:p-10 flex flex-col gap-6 rounded-lg bg-green-very_light text-center">
+                            <div class="mx-auto">
+                                <img src="./src/img/b-2.png" alt="battery" class="w-[300px] h-[80px] object-contain">
+                            </div>
+                            <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Duis autem vel eum iriure
+                                dolor</h3>
+                            <div class="text space-y-4 text-p text-gray-dark text-center flex-1">
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                    lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+                                    hendrerit in vulputate velit esse molestie consequat.</p>
+                            </div>
+                            <a href="#" aria-label="" class="btn-link mx-auto">Mehr Erfahren <svg width="8" height="12"
+                                    viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                        fill="#07C3AB" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="projects pb-10 sm:pb-12 md:pb-14 lg:pb-16 xl:pb-20">
+            <div class="container">
+                <div class="project-wrapper flex items-center flex-wrap gap-6 xmd:gap-20">
+                    <div class="project-img w-full xmd:w-[calc(50%-40px)]">
+                        <img src="./src/img/project.png" alt="project-img">
+                    </div>
+                    <div class="project-text space-y-4 md:space-y-6 w-full xmd:w-[calc(50%-40px)]">
+                        <h2 class="xxl:text-h2 lg:text-res_h2 md:text-res1_h2 text-h3  text-black-light">Die Hauptziele
+                            und Vision des Projekts SynBatt</h2>
+                        <div class="text space-y-4 text-p text-gray-dark">
+                            <p>Unser vorrangiges Ziel ist es, die Forschung und Entwicklung von Batterietechnologien zu
+                                fördern und die breite Nutzung dieser Technologien zu ermöglichen. Damit wollen wir
+                                einen wichtigen Beitrag zur Schaffung einer nachhaltigen und umweltfreundlichen
+                                Energieversorgung leisten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="service py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20 bg-green-very_light">
+            <div class="container">
+                <div class="service-wrapper flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-16 xl:gap-20">
+                    <div class="title w-full xsm:w-1/2 mx-auto">
+                        <h2 class="xxl:text-h2 lg:text-res_h2 md:text-res1_h2 text-h3  text-black-light text-center">
+                            Forschung, Innovation und Nachhaltigkeit</h2>
+                    </div>
+                    <div class="service-boxs flex items-stretch flex-wrap gap-6 sm:gap-8 lg:gap-12">
+                        <div
+                            class="service-box flex flex-col gap-6 text-center w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-32px)]">
+                            <div class="ser-img mx-auto">
+                                <svg width="55" height="30" viewBox="0 0 55 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M44.1667 6H8.16667C7.32292 6 6.66667 6.75 6.66667 7.5V22.5C6.66667 23.3438 7.32292 24 8.16667 24H44.1667C44.9167 24 45.6667 23.3438 45.6667 22.5V7.5C45.6667 6.75 44.9167 6 44.1667 6ZM8.16667 0H44.1667C48.2917 0 51.6667 3.375 51.6667 7.5V9C53.2604 9 54.6667 10.4062 54.6667 12V18C54.6667 19.6875 53.2604 21 51.6667 21V22.5C51.6667 26.7188 48.2917 30 44.1667 30H8.16667C3.94792 30 0.666672 26.7188 0.666672 22.5V7.5C0.666672 3.375 3.94792 0 8.16667 0ZM42.6667 9V21H9.66667V9H42.6667Z"
+                                        fill="url(#paint0_linear_2_894)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_2_894" x1="230.333" y1="-9" x2="213.942"
+                                            y2="98.3753" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00D990" />
+                                            <stop offset="0.5081" stop-color="#07C3AB" />
+                                            <stop offset="1" stop-color="#0DAEC5" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                            <div class="ser-title flex flex-col gap-6 flex-1">
+                                <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">
+                                    Neue Materialien für leistungsstarke Batterien
+                                </h3>
+                                <div class="text space-y-4 flex-1">
+                                    <p>Wir entwickeln neue Materialien wie Silizium und Lithium-Schwefel, um Batterien
+                                        effizienter und langlebiger zu machen.</p>
+                                </div>
+                                <a href="#" aria-label="" class="btn-link mx-auto">Mehr Erfahren <svg width="8"
+                                        height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="service-box flex flex-col gap-6 text-center w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-32px)]">
+                            <div class="ser-img mx-auto">
+                                <svg width="48" height="43" viewBox="0 0 48 43" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.5 7H35.25C39.1875 7 42.6563 4.84375 44.4375 1.46875C44.8125 0.90625 45.75 0.90625 45.9375 1.46875C47.25 4.9375 48 8.6875 48 12.7188C48 27.8125 37.9688 40 25.5938 40H25.5C17.8125 40 11.3438 34.8438 9.46878 27.7188C6.37503 30.625 4.50003 34.75 4.50003 39.25V40.75C4.50003 42.0625 3.46878 43 2.25003 43C0.937531 43 3.05176e-05 42.0625 3.05176e-05 40.75V39.25C3.05176e-05 32.2188 3.56253 26.0312 9.00003 22.4688C10.9688 21.0625 13.2188 20.125 15.6563 19.5625C17.1563 19.1875 18.6563 19 20.25 19H27H28.5C29.25 19 30 18.3438 30 17.5C30 16.75 29.25 16 28.5 16H20.25C16.4063 16 12.8438 16.9375 9.75003 18.5312C11.8125 11.875 18.0938 7 25.5 7Z"
+                                        fill="url(#paint0_linear_2_897)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_2_897" x1="226.667" y1="-2" x2="210.275"
+                                            y2="105.375" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00D990" />
+                                            <stop offset="0.5081" stop-color="#07C3AB" />
+                                            <stop offset="1" stop-color="#0DAEC5" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="ser-title flex flex-col gap-6 flex-1">
+                                <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">
+                                    Nachhaltige Prozesse in der Batterieproduktion
+                                </h3>
+                                <div class="text space-y-4 flex-1">
+                                    <p>Unser Fokus liegt auf umweltfreundlichen Produktionsmethoden und
+                                        Recyclingverfahren, um Batterien nachhaltig herzustellen.</p>
+                                </div>
+                                <a href="#" aria-label="" class="btn-link mx-auto">Mehr Erfahren <svg width="8"
+                                        height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="service-box flex flex-col gap-6 text-center w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-32px)]">
+                            <div class="ser-img mx-auto">
+                                <svg width="34" height="48" viewBox="0 0 34 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.8333 36H9.83328C8.89578 33.0938 7.02078 30.4688 5.14578 27.9375C4.67703 27.2812 4.20828 26.625 3.73953 25.9688C1.86453 23.25 0.833282 20.0625 0.833282 16.5C0.833282 7.40625 8.14578 0 17.3333 0C26.427 0 33.8333 7.40625 33.8333 16.5938C33.8333 20.0625 32.7083 23.25 30.8333 25.9688C30.3645 26.625 29.8958 27.2812 29.427 27.9375C27.552 30.4688 25.677 33.0938 24.8333 36ZM17.3333 48C13.1145 48 9.83328 44.7188 9.83328 40.5V39H24.8333V40.5C24.8333 44.7188 21.4583 48 17.3333 48ZM9.83328 16.5C9.83328 12.375 13.1145 9 17.3333 9C18.0833 9 18.8333 8.34375 18.8333 7.5C18.8333 6.75 18.0833 6 17.3333 6C11.5208 6 6.83328 10.7812 6.83328 16.5C6.83328 17.3438 7.48953 18 8.33328 18C9.08328 18 9.83328 17.3438 9.83328 16.5Z"
+                                        fill="url(#paint0_linear_2_907)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_2_907" x1="220" y1="3.18089e-06" x2="203.608"
+                                            y2="107.375" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00D990" />
+                                            <stop offset="0.5081" stop-color="#07C3AB" />
+                                            <stop offset="1" stop-color="#0DAEC5" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="ser-title flex flex-col gap-6 flex-1">
+                                <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">
+                                    Innovative Speicherlösungen für erneuerbare Energien
+                                </h3>
+                                <div class="text space-y-4 flex-1">
+                                    <p>Wir erforschen Speichersysteme, die erneuerbare Energien effizient nutzen und
+                                        eine zuverlässige Energieversorgung ermöglichen.</p>
+                                </div>
+                                <a href="#" aria-label="" class="btn-link mx-auto">Mehr Erfahren <svg width="8"
+                                        height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="section blog py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20">
+            <div class="container">
+                <div class="blog-wrapper flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-16 xl:gap-20">
+                    <div class="title mx-auto text-center w-full sm:w-3/4 xmd:w-3/5 space-y-4 md:space-y-6">
+                        <h2 class="xxl:text-h2 lg:text-res_h2 md:text-res1_h2 text-h3">Aktuelle Projekte und Forschung
+                        </h2>
+                        <div class="text text-center text-p text-gray-dark space-y-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 sm:gap-8 lg:gap-12">
+                        <div class="blog-boxs flex items-stretch flex-wrap gap-6 sm:gap-8 lg:gap-12">
+                            <div
+                                class="blog-box flex flex-col gap-4 sm:gap-6 md:gap-8 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-32px)]">
+                                <img src="./src/img/blog-1.png" alt="blog-1" class="rounded-lg">
+                                <div class="blog-content flex-1 flex flex-col gap-4 sm:gap-6">
+                                    <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Medium length
+                                        section heading goes here</h3>
+                                    <div class="text space-y-4 text-p text-gray-dark flex-1">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                            enim
+                                            in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                                            interdum nulla.</p>
+                                    </div>
+                                </div>
+                                <a href="#" aria-label="" class="btn-link">Zum Projekt <svg width="8" height="12"
+                                        viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div
+                                class="blog-box flex flex-col gap-4 sm:gap-6 md:gap-8 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-32px)]">
+                                <img src="./src/img/blog-2.png" alt="blog-1" class="rounded-lg">
+                                <div class="blog-content flex-1 flex flex-col gap-4 sm:gap-6">
+                                    <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Medium length
+                                        section heading goes here</h3>
+                                    <div class="text space-y-4 text-p text-gray-dark flex-1">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                            enim
+                                            in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                                            interdum nulla.</p>
+                                    </div>
+                                </div>
+                                <a href="#" aria-label="" class="btn-link">Zum Projekt <svg width="8" height="12"
+                                        viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div
+                                class="blog-box flex flex-col gap-4 sm:gap-6 md:gap-8 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-32px)]">
+                                <img src="./src/img/blog-3.png" alt="blog-1" class="rounded-lg">
+                                <div class="blog-content flex-1 flex flex-col gap-4 sm:gap-6">
+                                    <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Medium length
+                                        section heading goes here</h3>
+                                    <div class="text space-y-4 text-p text-gray-dark flex-1">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                            enim
+                                            in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+                                            interdum nulla.</p>
+                                    </div>
+                                </div>
+                                <a href="#" aria-label="" class="btn-link">Zum Projekt <svg width="8" height="12"
+                                        viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" aria-label="" class="btn mx-auto">Alle Projekte ansehen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20 news">
+            <div class="container">
+                <div class="news-wrapper flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-16 xl:gap-20">
+                    <div class="title space-y-4">
+                        <h2 class="xxl:text-h2 lg:text-res_h2 md:text-res1_h2 text-h3  text-black-light">News</h2>
+                        <div class="text space-y-4 text-p text-gray-dark">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                    <div class="news-content flex flex-wrap gap-5 sm:gap-7 xlg:gap-12">
+                        <div class="news-img w-full xlg:w-[calc(50%-24px)]">
+                            <img src="./src/img/news-1.png" alt="news post">
+                        </div>
+                        <div class="news-content space-y-4 w-full xlg:w-[calc(50%-24px)]">
+                            <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Lorem ipsum dolor sit amet,
+                                consetetur sadipscing
+                                elitr, sed diam nonumy eirmod tempor</h3>
+                            <div class="text space-y-4 text-p text-gray-dark">
+                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                    consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                                    iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
+                                    te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                    volutpat. </p>
+                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                    lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+                                    hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                                    nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                                    praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+                            </div>
+                            <a href="#" aria-label="" class="btn-link pt-3">Weiter lesen <svg width="8" height="12"
+                                    viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                        fill="#07C3AB"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-boxs flex flex-wrap gap-6 sm:gap-8 lg:gap-16">
+                        <div class="news-box flex flex-col gap-5 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-43px)]">
+                            <img src="./src/img/np-1.png" alt="news post" class="rounded-lg">
+                            <div class="news-content flex flex-col gap-4 flex-1">
+                                <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Lorem ipsum dolor sit
+                                    amet
+                                </h3>
+                                <div class="text space-y-4 flex-1">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in
+                                        eros.</p>
+                                </div>
+                                <a href="#" aria-label="" class="btn-link mt-3">Weiter lesen <svg width="8" height="12"
+                                        viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="news-box flex flex-col gap-5 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-43px)]">
+                            <img src="./src/img/np-2.png" alt="news post" class="rounded-lg">
+                            <div class="news-content flex flex-col gap-4 flex-1">
+                                <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Lorem ipsum dolor sit
+                                    amet
+                                </h3>
+                                <div class="text space-y-4 flex-1">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in
+                                        eros.</p>
+                                </div>
+                                <a href="#" aria-label="" class="btn-link mt-3">Weiter lesen <svg width="8" height="12"
+                                        viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="news-box flex flex-col gap-5 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.33%-43px)]">
+                            <img src="./src/img/np-3.png" alt="news post" class="rounded-lg">
+                            <div class="news-content flex flex-col gap-4 flex-1">
+                                <h3 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Lorem ipsum dolor sit
+                                    amet
+                                </h3>
+                                <div class="text space-y-4 flex-1">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                                        in
+                                        eros.</p>
+                                </div>
+                                <a href="#" aria-label="" class="btn-link mt-3">Weiter lesen <svg width="8" height="12"
+                                        viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="news-latter py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20">
+            <div class="container">
+                <div
+                    class="news-latter-wrapper p-4 md:p-6 xlg:p-8 xxl:p-12 bg-blue flex flex-wrap gap-6 xlg:gap-12 items-center rounded-2xl">
+                    <div class="news-latter-text space-y-4 md:space-y-6 w-full xlg:w-[calc(50%-24px)]">
+                        <h2 class="xxl:text-h2 lg:text-res_h2 md:text-res1_h2 text-h3  text-green-light">Newsletter
+                            Anmeldung</h2>
+                        <div class="text text-p text-white space-y-4">
+                            <p>Wenn Sie über SynBatt informiert werden und immer auf dem neuesten Stand bleiben wollen,
+                                können Sie sich mit Hilfe des nebenstehenden Formulars für den SynBatt Newsletter
+                                anmelden.</p>
+                        </div>
+                    </div>
+                    <div class="news-form w-full xlg:w-[calc(50%-24px)]">
+                        <form action="" class="space-y-4">
+                            <div class="ifild flex items-center gap-2 xsm:flex-row flex-col">
+                                <input type="email" placeholder="E-Mail-Adresse"
+                                    class="p-3 bg-white rounded-lg border-none outline-none w-full text-p text-gray-dark placeholder:text-p placeholder:text-gray-dark">
+                                <input type="submit" value="Anmelden" class="btn flex-none xsm:w-fit w-full">
+                            </div>
+                            <div class="ifild-check flex items-start gap-2">
+                                <input type="checkbox" name="" id=""
+                                    class="flex-none bg-transparent border border-white w-[15px] h-[15px] rounded-md mt-[4px] ">
+                                <div class="text text-body text-white space-y-4">
+                                    <p>Hiermit bestätige ich die Datenschutzerklärung gelesen und verstanden zu haben.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div
+                class="f-wrapper pt-10 sm:pt-12 md:pt-14 lg:pt-16 xl:pt-20 pb-5 md:pb-7 xl:pb-10 flex flex-wrap gap-6 md:gap-10 lg:gap-12 xl:gap-16">
+                <div class="f-fild space-y-6 md:space-y-8 w-full lg:w-[calc(40%-36px)] xl:w-[calc(40%-48px)]">
+                    <a href="index.html" aria-label="index" class="logo">
+                        <img src="./src/img/SynBatt-Logo.png" alt="logo" class="w-[157px]">
+                    </a>
+                    <div class="f-title space-y-2">
+                        <div class="title text-h4 sm:text-res_h3 xlg:text-h3 text-gray-dark">Kontakt:</div>
+                        <div class="text text-p text-gray-dark space-y-4">
+                            Kompetenznetzwerk Lithium-Ionen-Batterien (KLiB) e. V. <br>Friedrichstr. 95 <br>10117
+                            Berlin <br>Germany
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="f-fild space-y-3 w-full xsm:w-[calc(50%-12px)] md:w-[calc(33.33%-27px)] lg:w-[calc(20%-36px)] xl:w-[calc(20%-48px)]">
+                    <div class="title text-p font-bold text-gray-dark">Förderinitiative</div>
+                    <ul class="text-body text-gray-dark  space-y-3">
+                        <li><a aria-label="" href="#">Ziele und Förderkonzept</a></li>
+                        <li><a aria-label="" href="#">Begleitmaßnahme zu Batterie 2020</a></li>
+                        <li><a aria-label="" href="#">Förderung der Batterieforschung durch das BMBF</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="f-fild space-y-3 w-full xsm:w-[calc(50%-12px)] md:w-[calc(33.33%-27px)] lg:w-[calc(20%-36px)] xl:w-[calc(20%-48px)]">
+                    <div class="title text-p font-bold text-gray-dark">Förderungen</div>
+                    <ul class="text-body text-gray-dark  space-y-3">
+                        <li><a href="#" aria-label="">Förderbekanntmachungen</a></li>
+                        <li><a href="#" aria-label="">Nachwuchsförderung</a></li>
+                        <li><a href="#" aria-label="">Institutionelle Förderung</a></li>
+                        <li><a href="#" aria-label="">Förderberatung</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="f-fild space-y-3 w-full xsm:w-[calc(50%-12px)] md:w-[calc(33.33%-27px)] lg:w-[calc(20%-36px)] xl:w-[calc(20%-48px)]">
+                    <div class="title text-p font-bold text-gray-dark">Service</div>
+                    <ul class="text-body text-gray-dark  space-y-3">
+                        <li><a href="#" aria-label="">Publikationen</a></li>
+                        <li><a href="#" aria-label="">Weiterführende Links</a></li>
+                        <li><a href="#" aria-label="">Lexikon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="container">
+                <div
+                    class="cp-wrapper py-4 sm:py-6 lg:py-8 border-t-[1px] border-solid border-gray-light flex justify-between gap-3 gap-y-4 xmd:flex-row flex-col-reverse xmd:items-start items-center">
+                    <div class="copy-text text-body font-normal text-gray">
+                        <p>© Kompetenznetzwerk Lithium-Ionen-Batterien e. V.</p>
+                    </div>
+                    <div class="copy-link">
+                        <ul
+                            class="flex flex-wrap text-body items-center justify-center font-normal text-gray-dark gap-4 lg:gap-8 gap-y-3">
+                            <li><a href="#" aria-label="">Über BEMA 2020</a></li>
+                            <li><a href="#" aria-label="">Impressum</a></li>
+                            <li><a href="#" aria-label="">Bildrechte</a></li>
+                            <li><a href="#" aria-label="">Datenschutzerklärung</a></li>
+                            <li><a href="#" aria-label="">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- main js -->
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

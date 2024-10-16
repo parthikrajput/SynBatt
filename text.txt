@@ -1,0 +1,19 @@
+h1
+text-res1_h2 sm:text-res_h2 md:text-h2 lg:text-res_h1 xl:text-h1
+
+h2
+xxl:text-h2 lg:text-res_h2 md:text-res1_h2 text-h3 
+
+h3
+text-h4 sm:text-res_h3 xlg:text-h3
+
+py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20
+pb-10 sm:pb-12 md:pb-14 lg:pb-16 xl:pb-20
+
+gap-6 sm:gap-8 md:gap-10 lg:gap-16
+gap-6 sm:gap-8 md:gap-10 lg:gap-16 xl:gap-20
+
+space-y-6 md:space-y-8
+
+space-y-4 md:space-y-6
+

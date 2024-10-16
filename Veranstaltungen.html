@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/fonts/font.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header class="relative z-30">
+        <div class="h-navigition bg-blue">
+            <div class="container">
+                <div
+                    class="h-navigition-wrapper *:text-body h-[50px]  flex flex-wrap justify-end items-center gap-[20px] xsm:gap-[30px] text-gray-light">
+                    <a href="#" aria-label="">Newsletter</a>
+                    <a href="#" aria-label="">Kontakt</a>
+                    <a href="#" aria-label="">English</a>
+                </div>
+            </div>
+        </div>
+        <div class="header bg-white py-5">
+            <div class="container">
+                <div class="h-wrapper flex items-center justify-between">
+                    <div class="hf-logo flex-none flex items-center gap-5">
+                        <div class="menu-icon lg:hidden">
+                            <svg xmlns="http: //www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 448 512">
+                                <path
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                                    fill="#082045"></path>
+                            </svg>
+                        </div>
+                        <a href="index.html" aria-label="index"
+                            class="hf-logo w-[110px] sm:w-[158px] lg:w-[120px] xxl:w-[140px] xl:w-[158px]">
+                            <img src="./src/img/SynBatt-Logo.png" alt="SynBatt-Logo">
+                        </a>
+                    </div>
+                    <nav
+                        class="fixed top-0 left-[-1000px] w-[300px] h-screen bg-blue z-40 transition-all duration-1000 ease-in-out lg:w-auto lg:left-0 lg:relative lg:h-auto lg:bg-transparent">
+                        <ul
+                            class="flex lg:items-center gap-[24px] lg:gap-[12px] xxl:gap-[24px] xl:gap-[32px] *:text-body text-white lg:text-gray-dark lg:flex-row flex-col px-4 pt-20 lg:pl-0 lg:pt-0">
+                            <li id="toggle-menu"
+                                class="menu-item group flex items-center lg:items-center flex-wrap justify-between lg:justify-normal gap-[16px] lg:gap-[7px] relative cursor-pointer">
+                                <a aria-label="" href="#">Förderinitiative</a>
+                                <ul id="submenu"
+                                    class="sub-menu lg:absolute lg:w-[150px] w-full lg:p-4 pl-4 top-[100%] left-0 bg-blue text-body text-white capitalize shadow-custom text-black-100 space-y-4 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible lg:transition-all lg:duration-300 hidden lg:block">
+                                    <li><a aria-label="" href="#">home 1</a></li>
+                                    <li><a aria-label="" href="#">home 2</a></li>
+                                    <li><a aria-label="" href="#">home 3</a></li>
+                                    <li><a aria-label="" href="#">home 4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a aria-label="" href="#">Projekte</a>
+                            </li>
+                            <li>
+                                <a aria-label="" href="#">Veranstaltungen</a>
+                            </li>
+                            <li>
+                                <a aria-label="" href="#">
+                                    Beirat Batterieforschung DE
+                                </a>
+                            </li>
+                            <li id="toggle-menu"
+                                class="menu-item group flex items-center lg:items-center flex-wrap justify-between lg:justify-normal gap-[16px] lg:gap-[7px] relative cursor-pointer">
+                                <a aria-label="" href="#">
+                                    Förderung
+                                </a>
+                                <ul id="submenu"
+                                    class="sub-menu lg:absolute lg:w-[150px] w-full lg:p-4 pl-4 top-[100%] left-0 bg-blue text-body text-white capitalize shadow-custom text-black-100 space-y-4 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible lg:transition-all lg:duration-300 hidden lg:block">
+                                    <li><a aria-label="" href="#">home 1</a></li>
+                                    <li><a aria-label="" href="#">home 2</a></li>
+                                    <li><a aria-label="" href="#">home 3</a></li>
+                                    <li><a aria-label="" href="#">home 4</a></li>
+                                </ul>
+                            </li>
+                            <li id="toggle-menu"
+                                class="menu-item group flex items-center lg:items-center flex-wrap justify-between lg:justify-normal gap-[16px] lg:gap-[7px] relative cursor-pointer">
+                                <a aria-label="" href="#">
+                                    Service
+                                </a>
+                                <ul id="submenu"
+                                    class="sub-menu lg:absolute lg:w-[150px] w-full lg:p-4 pl-4 top-[100%] left-0 bg-blue text-body text-white capitalize shadow-custom text-black-100 space-y-4 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible lg:transition-all lg:duration-300 hidden lg:block">
+                                    <li><a aria-label="" href="#">home 1</a></li>
+                                    <li><a aria-label="" href="#">home 2</a></li>
+                                    <li><a aria-label="" href="#">home 3</a></li>
+                                    <li><a aria-label="" href="#">home 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="close-icon lg:hidden absolute top-5 right-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 448 512">
+                                <path
+                                    d="M342.6 150.6a32 32 0 0 0-45.3-45.3L192 210.7 86.6 105.4a32 32 0 0 0-45.3 45.3L146.7 256 41.4 361.4a32 32 0 0 0 45.3 45.3L192 301.3l105.4 105.3a32 32 0 0 0 45.3-45.3L237.3 256l105.3-105.4z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </div>
+                    </nav>
+                    <a href="#" aria-label="" class="hs-logo w-[100px] xsm:w-[119px] flex-none">
+                        <img src="./src/img/sec-logo.png" alt="sec-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="ford-content py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20">
+            <div class="container">
+                <div class="ford-content-wrapper flex flex-wrap gap-6 xlg:gap-10 xxl:gap-20">
+                    <div
+                        class="ford-cont flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 w-full xlg:w-[calc(65%-20px)] xxl:w-[calc(65%-40px)]">
+                        <h1 class="text-res1_h2 sm:text-res_h2 md:text-h2 lg:text-res_h1 xl:text-h1 text-black-light">
+                            Veranstaltungen</h1>
+                        <div
+                            class="vera-box flex xsm:flex-row flex-col gap-6 xsm:gap-10 xxl:gap-12 xl:gap-16 last:border-b-0 border-solid border-gray-light border-b-2 pb-6 sm:pb-8 md:pb-10 lg:pb-12">
+                            <div class="date w-full xsm:w-[calc(150px-32px)] flex-none text-left xsm:text-center">
+                                <h2
+                                    class="text-res1_h2 sm:text-res_h2 md:text-h2 lg:text-res_h1 xl:text-h1 text-green-light">
+                                    21</h2>
+                                <div class="text text-p text-green-light text-left xsm:text-center">
+                                    <p>Jan 2025</p>
+                                </div>
+                            </div>
+                            <div class="ford-title space-y-6">
+                                <h2 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Batterieforum
+                                    Deutschland 2025</h2>
+                                <div class="vera-dates flex flex-wrap gap-6">
+                                    <div class="vera-date flex items-center gap-2 text-p text-black-light"><svg
+                                            width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.75 0.75V2H9.25V0.75C9.25 0.34375 9.5625 0 10 0C10.4062 0 10.75 0.34375 10.75 0.75V2H12C13.0938 2 14 2.90625 14 4V4.5V6V14C14 15.125 13.0938 16 12 16H2C0.875 16 0 15.125 0 14V6V4.5V4C0 2.90625 0.875 2 2 2H3.25V0.75C3.25 0.34375 3.5625 0 4 0C4.40625 0 4.75 0.34375 4.75 0.75ZM1.5 6V14C1.5 14.2812 1.71875 14.5 2 14.5H12C12.25 14.5 12.5 14.2812 12.5 14V6H1.5Z"
+                                                fill="#07C3AB" />
+                                        </svg>
+                                        21.01.2025 bis 23.01.2025
+                                    </div>
+
+                                    <div class="vera-date flex items-center gap-2 text-p text-black-light"><svg
+                                            width="12" height="17" viewBox="0 0 12 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5 6C10.5 3.53125 8.46875 1.5 6 1.5C3.5 1.5 1.5 3.53125 1.5 6C1.5 6.40625 1.625 7 1.96875 7.8125C2.28125 8.5625 2.75 9.4375 3.28125 10.3125C4.1875 11.75 5.21875 13.125 6 14.125C6.75 13.125 7.78125 11.75 8.6875 10.3125C9.21875 9.4375 9.6875 8.5625 10 7.8125C10.3438 7 10.5 6.40625 10.5 6ZM12 6C12 8.75 8.34375 13.5938 6.71875 15.625C6.34375 16.0938 5.625 16.0938 5.25 15.625C3.65625 13.5938 0 8.75 0 6C0 2.6875 2.6875 0 6 0C9.3125 0 12 2.6875 12 6ZM7 6C7 5.46875 6.53125 5 6 5C5.4375 5 5 5.46875 5 6C5 6.5625 5.4375 7 6 7C6.53125 7 7 6.5625 7 6ZM3.5 6C3.5 5.125 3.96875 4.3125 4.75 3.84375C5.5 3.40625 6.46875 3.40625 7.25 3.84375C8 4.3125 8.5 5.125 8.5 6C8.5 6.90625 8 7.71875 7.25 8.1875C6.46875 8.625 5.5 8.625 4.75 8.1875C3.96875 7.71875 3.5 6.90625 3.5 6Z"
+                                                fill="#07C3AB" />
+                                        </svg>
+                                        Ritz-Carlton, Berlin
+                                    </div>
+                                </div>
+                                <div class="text text-p text-gray-dark space-y-4">
+                                    <p>Ziel des Kongresses Batterieforum Deutschland ist es, Wissenschaftler:innen aus
+                                        der Industrie und universitären sowie außeruniversitären Forschungseinrichtungen
+                                        zusammenzuführen, um in einem gemeinsamen Dialog Themenschwerpunkte zu Batterien
+                                        zu diskutieren und ein gemeinsames Verständnis zu entwickeln. Die Schwerpunkte
+                                        für das Jahr 2025 werden voraussichtlich im September 2024 feststehen.</p>
+                                </div>
+                                <div class="ver-img">
+                                    <img src="./src/img/ver-1.png" alt="ver-1" class="w-[150px]">
+                                </div>
+                                <a href="#" aria-label="" class="btn-link ">zum Internetauftritt <svg width="8"
+                                        height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="vera-box flex xsm:flex-row flex-col gap-6 xsm:gap-10 xxl:gap-12 xl:gap-16 last:border-b-0 border-solid border-gray-light border-b-2 pb-6 sm:pb-8 md:pb-10 lg:pb-12">
+                            <div class="date w-full xsm:w-[calc(150px-32px)] flex-none text-left xsm:text-center">
+                                <h2
+                                    class="text-res1_h2 sm:text-res_h2 md:text-h2 lg:text-res_h1 xl:text-h1 text-green-light">
+                                    24</h2>
+                                <div class="text text-p text-green-light text-left xsm:text-center">
+                                    <p>Jan 2024</p>
+                                </div>
+                            </div>
+                            <div class="ford-title space-y-6">
+                                <h2 class="text-h4 sm:text-res_h3 xlg:text-h3 text-black-light">Batterieforum
+                                    Deutschland 2025</h2>
+                                <div class="vera-dates flex flex-wrap gap-6">
+                                    <div class="vera-date flex items-center gap-2 text-p text-black-light"><svg
+                                            width="14" height="16" viewBox="0 0 14 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.75 0.75V2H9.25V0.75C9.25 0.34375 9.5625 0 10 0C10.4062 0 10.75 0.34375 10.75 0.75V2H12C13.0938 2 14 2.90625 14 4V4.5V6V14C14 15.125 13.0938 16 12 16H2C0.875 16 0 15.125 0 14V6V4.5V4C0 2.90625 0.875 2 2 2H3.25V0.75C3.25 0.34375 3.5625 0 4 0C4.40625 0 4.75 0.34375 4.75 0.75ZM1.5 6V14C1.5 14.2812 1.71875 14.5 2 14.5H12C12.25 14.5 12.5 14.2812 12.5 14V6H1.5Z"
+                                                fill="#07C3AB" />
+                                        </svg>
+                                        24.01.2024 bis 26.01.2024
+                                    </div>
+
+                                    <div class="vera-date flex items-center gap-2 text-p text-black-light"><svg
+                                            width="12" height="17" viewBox="0 0 12 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5 6C10.5 3.53125 8.46875 1.5 6 1.5C3.5 1.5 1.5 3.53125 1.5 6C1.5 6.40625 1.625 7 1.96875 7.8125C2.28125 8.5625 2.75 9.4375 3.28125 10.3125C4.1875 11.75 5.21875 13.125 6 14.125C6.75 13.125 7.78125 11.75 8.6875 10.3125C9.21875 9.4375 9.6875 8.5625 10 7.8125C10.3438 7 10.5 6.40625 10.5 6ZM12 6C12 8.75 8.34375 13.5938 6.71875 15.625C6.34375 16.0938 5.625 16.0938 5.25 15.625C3.65625 13.5938 0 8.75 0 6C0 2.6875 2.6875 0 6 0C9.3125 0 12 2.6875 12 6ZM7 6C7 5.46875 6.53125 5 6 5C5.4375 5 5 5.46875 5 6C5 6.5625 5.4375 7 6 7C6.53125 7 7 6.5625 7 6ZM3.5 6C3.5 5.125 3.96875 4.3125 4.75 3.84375C5.5 3.40625 6.46875 3.40625 7.25 3.84375C8 4.3125 8.5 5.125 8.5 6C8.5 6.90625 8 7.71875 7.25 8.1875C6.46875 8.625 5.5 8.625 4.75 8.1875C3.96875 7.71875 3.5 6.90625 3.5 6Z"
+                                                fill="#07C3AB" />
+                                        </svg>
+                                        Ritz-Carlton, Berlin
+                                    </div>
+                                </div>
+                                <div class="text text-p text-gray-dark space-y-4">
+                                    <p>Ziel des Kongresses Batterieforum Deutschland ist es, Wissenschaftler:innen aus
+                                        der Industrie und universitären sowie außeruniversitären Forschungseinrichtungen
+                                        zusammenzuführen, um in einem gemeinsamen Dialog Themenschwerpunkte zu Batterien
+                                        zu diskutieren und ein gemeinsames Verständnis zu entwickeln. Die Schwerpunkte
+                                        für das Jahr 2024 sind: Methoden zur Beschleunigung der Zellentwicklung,
+                                        Batteriezellkomponenten, Simulation und Machine Learning, Second Use, Repair und
+                                        Remanufacturing sowie Batteriesysteme.</p>
+                                </div>
+                                <div class="ver-img">
+                                    <img src="./src/img/ver-1.png" alt="ver-1" class="w-[150px]">
+                                </div>
+                                <a href="#" aria-label="" class="btn-link ">zum Internetauftritt <svg width="8"
+                                        height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.03125 5.46875C7.3125 5.78125 7.3125 6.25 7.03125 6.53125L2.03125 11.5312C1.71875 11.8438 1.25 11.8438 0.96875 11.5312C0.65625 11.25 0.65625 10.7812 0.96875 10.5L5.4375 6.03125L0.96875 1.53125C0.65625 1.25 0.65625 0.78125 0.96875 0.5C1.25 0.1875 1.71875 0.1875 2 0.5L7.03125 5.46875Z"
+                                            fill="#07C3AB"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ford-sidebar flex flex-col gap-6 w-full xlg:w-[calc(35%-20px)] xxl:w-[calc(35%-40px)]">
+                        <div class="ford-title-box space-y-6  p-5 md:p-7 xxl:p-10 rounded-lg bg-blue-very_light">
+                            <h2
+                                class="text-h4 sm:text-res_h3 xlg:text-h3 text-blue font-normal sm:font-normal xlg:font-normal">
+                                Ansprechpartner</h2>
+                            <div class="text text-p text-gray-dark space-y-4">
+                                <p>Dominik Sollmann <br>KLiB e. V.</p>
+
+                                <div class="calls space-y-2">
+                                    <div class="call"><a href="tel:+493020679002" aria-label=""
+                                            class="flex items-center gap-2 text-p text-green-light"><svg width="17"
+                                                height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.7188 9.625L15.2188 11.125C15.7812 11.3438 16.0938 11.9375 15.9688 12.5312L15.2188 16.0312C15.0938 16.5938 14.5625 17.0312 14 17.0312C13.7812 17.0312 13.5938 17 13.4062 17C13.0938 17 12.7812 16.9688 12.5 16.9375C5.46875 16.1875 0 10.25 0 3C0 2.4375 0.40625 1.90625 0.96875 1.78125L4.46875 1.03125C5.0625 0.90625 5.65625 1.21875 5.875 1.78125L7.375 5.28125C7.59375 5.78125 7.46875 6.375 7.03125 6.71875L5.75 7.78125C6.59375 9.21875 7.78125 10.4062 9.21875 11.25L10.2812 9.96875C10.625 9.53125 11.2188 9.40625 11.7188 9.625ZM13.7812 15.5L14.4375 12.4062L11.3125 11.0625L10.4062 12.1875C9.9375 12.75 9.125 12.9062 8.46875 12.5312C6.8125 11.5625 5.4375 10.1875 4.46875 8.53125C4.09375 7.875 4.25 7.0625 4.8125 6.59375L5.9375 5.6875L4.59375 2.5625L1.5 3.21875C1.59375 9.96875 7.03125 15.4062 13.7812 15.5Z"
+                                                    fill="#07C3AB" />
+                                            </svg>
+                                            +49 30 206790-02</a>
+                                    </div>
+                                    <div class="call"><a href="mailto:dominik.sollmann@klib-org.de" aria-label=""
+                                            class="flex items-center gap-2 text-p text-green-light"><svg width="16"
+                                                height="12" viewBox="0 0 16 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2 1.5C1.71875 1.5 1.5 1.75 1.5 2V2.71875L6.875 7.125C7.53125 7.65625 8.4375 7.65625 9.09375 7.125L14.5 2.71875V2C14.5 1.75 14.25 1.5 14 1.5H2ZM1.5 4.65625V10C1.5 10.2812 1.71875 10.5 2 10.5H14C14.25 10.5 14.5 10.2812 14.5 10V4.65625L10.0625 8.28125C8.84375 9.28125 7.125 9.28125 5.9375 8.28125L1.5 4.65625ZM0 2C0 0.90625 0.875 0 2 0H14C15.0938 0 16 0.90625 16 2V10C16 11.125 15.0938 12 14 12H2C0.875 12 0 11.125 0 10V2Z"
+                                                    fill="#07C3AB" />
+                                            </svg>
+                                            dominik.sollmann@klib-org.de</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="news-latter py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20">
+            <div class="container">
+                <div
+                    class="news-latter-wrapper p-4 md:p-6 xlg:p-8 xxl:p-12 bg-blue flex flex-wrap gap-6 xlg:gap-12 items-center rounded-2xl">
+                    <div class="news-latter-text space-y-4 md:space-y-6 w-full xlg:w-[calc(50%-24px)]">
+                        <h2 class="xxl:text-h2 lg:text-res_h2 md:text-res1_h2 text-h3  text-green-light">Newsletter
+                            Anmeldung</h2>
+                        <div class="text text-p text-white space-y-4">
+                            <p>Wenn Sie über SynBatt informiert werden und immer auf dem neuesten Stand bleiben wollen,
+                                können Sie sich mit Hilfe des nebenstehenden Formulars für den SynBatt Newsletter
+                                anmelden.</p>
+                        </div>
+                    </div>
+                    <div class="news-form w-full xlg:w-[calc(50%-24px)]">
+                        <form action="" class="space-y-4">
+                            <div class="ifild flex items-center gap-2 xsm:flex-row flex-col">
+                                <input type="email" placeholder="E-Mail-Adresse"
+                                    class="p-3 bg-white rounded-lg border-none outline-none w-full text-p text-gray-dark placeholder:text-p placeholder:text-gray-dark">
+                                <input type="submit" value="Anmelden" class="btn flex-none xsm:w-fit w-full">
+                            </div>
+                            <div class="ifild-check flex items-start gap-2">
+                                <input type="checkbox" name="" id=""
+                                    class="flex-none bg-transparent border border-white w-[15px] h-[15px] rounded-md mt-[4px] ">
+                                <div class="text text-body text-white space-y-4">
+                                    <p>Hiermit bestätige ich die Datenschutzerklärung gelesen und verstanden zu haben.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div
+                class="f-wrapper pt-10 sm:pt-12 md:pt-14 lg:pt-16 xl:pt-20 pb-5 md:pb-7 xl:pb-10 flex flex-wrap gap-6 md:gap-10 lg:gap-12 xl:gap-16">
+                <div class="f-fild space-y-6 md:space-y-8 w-full lg:w-[calc(40%-36px)] xl:w-[calc(40%-48px)]">
+                    <a href="index.html" aria-label="index" class="logo">
+                        <img src="./src/img/SynBatt-Logo.png" alt="logo" class="w-[157px]">
+                    </a>
+                    <div class="f-title space-y-2">
+                        <div class="title text-h4 sm:text-res_h3 xlg:text-h3 text-gray-dark">Kontakt:</div>
+                        <div class="text text-p text-gray-dark space-y-4">
+                            Kompetenznetzwerk Lithium-Ionen-Batterien (KLiB) e. V. <br>Friedrichstr. 95 <br>10117
+                            Berlin <br>Germany
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="f-fild space-y-3 w-full xsm:w-[calc(50%-12px)] md:w-[calc(33.33%-27px)] lg:w-[calc(20%-36px)] xl:w-[calc(20%-48px)]">
+                    <div class="title text-p font-bold text-gray-dark">Förderinitiative</div>
+                    <ul class="text-body text-gray-dark  space-y-3">
+                        <li><a aria-label="" href="#">Ziele und Förderkonzept</a></li>
+                        <li><a aria-label="" href="#">Begleitmaßnahme zu Batterie 2020</a></li>
+                        <li><a aria-label="" href="#">Förderung der Batterieforschung durch das BMBF</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="f-fild space-y-3 w-full xsm:w-[calc(50%-12px)] md:w-[calc(33.33%-27px)] lg:w-[calc(20%-36px)] xl:w-[calc(20%-48px)]">
+                    <div class="title text-p font-bold text-gray-dark">Förderungen</div>
+                    <ul class="text-body text-gray-dark  space-y-3">
+                        <li><a href="#" aria-label="">Förderbekanntmachungen</a></li>
+                        <li><a href="#" aria-label="">Nachwuchsförderung</a></li>
+                        <li><a href="#" aria-label="">Institutionelle Förderung</a></li>
+                        <li><a href="#" aria-label="">Förderberatung</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="f-fild space-y-3 w-full xsm:w-[calc(50%-12px)] md:w-[calc(33.33%-27px)] lg:w-[calc(20%-36px)] xl:w-[calc(20%-48px)]">
+                    <div class="title text-p font-bold text-gray-dark">Service</div>
+                    <ul class="text-body text-gray-dark  space-y-3">
+                        <li><a href="#" aria-label="">Publikationen</a></li>
+                        <li><a href="#" aria-label="">Weiterführende Links</a></li>
+                        <li><a href="#" aria-label="">Lexikon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="container">
+                <div
+                    class="cp-wrapper py-4 sm:py-6 lg:py-8 border-t-[1px] border-solid border-gray-light flex justify-between gap-3 gap-y-4 xmd:flex-row flex-col-reverse xmd:items-start items-center">
+                    <div class="copy-text text-body font-normal text-gray">
+                        <p>© Kompetenznetzwerk Lithium-Ionen-Batterien e. V.</p>
+                    </div>
+                    <div class="copy-link">
+                        <ul
+                            class="flex flex-wrap text-body items-center justify-center font-normal text-gray-dark gap-4 lg:gap-8 gap-y-3">
+                            <li><a href="#" aria-label="">Über BEMA 2020</a></li>
+                            <li><a href="#" aria-label="">Impressum</a></li>
+                            <li><a href="#" aria-label="">Bildrechte</a></li>
+                            <li><a href="#" aria-label="">Datenschutzerklärung</a></li>
+                            <li><a href="#" aria-label="">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- main js -->
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
