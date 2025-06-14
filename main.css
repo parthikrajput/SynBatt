@@ -639,16 +639,16 @@ b,
   }
 }
 
-li#toggle-menu > a {
+li#toggle-menu>a {
   position: relative;
-  width: 100%;
+  width: 90%;
   padding-right: 1.25rem;
 }
 
-li#toggle-menu > a::before {
+li#toggle-menu>a::before {
   position: absolute;
   top: 73%;
-  right: 0px;
+  right: -1.5rem;
   height: 14px;
   width: 14px;
   --tw-translate-y: -50%;
@@ -659,11 +659,12 @@ li#toggle-menu > a::before {
 }
 
 @media (min-width: 1024px) {
-  li#toggle-menu > a {
+  li#toggle-menu>a {
     width: auto;
   }
 
-  li#toggle-menu > a::before {
+  li#toggle-menu>a::before {
+    right: 0px;
     content: var(--tw-content);
     background-image: url('data:image/svg+xml,<svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.36487 5.96484C6.09143 6.23828 5.68127 6.23828 5.43518 5.96484L1.06018 1.58984C0.786743 1.34375 0.786743 0.933594 1.06018 0.6875C1.30627 0.414062 1.71643 0.414062 1.96252 0.6875L5.87268 4.59766L9.81018 0.660156C10.0563 0.414062 10.4664 0.414062 10.7125 0.660156C10.986 0.933594 10.986 1.34375 10.7125 1.58984L6.36487 5.96484Z" fill="%23555555"/></svg>');
   }
@@ -835,10 +836,6 @@ li#toggle-menu > a::before {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .mb-7 {
@@ -2435,11 +2432,6 @@ li#toggle-menu > a::before {
   font-weight: 700;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -2450,10 +2442,6 @@ li#toggle-menu > a::before {
 
 .font-normal {
   font-weight: 400;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .uppercase {

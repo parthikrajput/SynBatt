@@ -22,10 +22,12 @@
   .btn-link {
     @apply text-btn text-green-light flex items-center gap-2 w-fit;
   }
+
   b,
   strong {
     @apply font-semibold;
   }
+
   .tab-content .tab-boxs .tab-box .tab-text .text p b,
   .tab-content .tab-boxs .tab-box .tab-text .text p strong {
     @apply block;
@@ -33,7 +35,7 @@
 }
 
 @layer components {
-  li#toggle-menu > a {
-    @apply relative lg:w-auto w-full pr-5 before:absolute before:top-[73%] before:right-0 lg:before:bg-customarrow before:w-[14px] before:h-[14px] before:-translate-y-1/2 before:bg-no-repeat before:bg-hover_customarrow;
+  li#toggle-menu>a {
+    @apply relative lg:w-auto w-[90%] pr-5 before:absolute before:top-[73%] lg:before:right-0 before:-right-[1.5rem] lg:before:bg-customarrow before:w-[14px] before:h-[14px] before:-translate-y-1/2 before:bg-no-repeat before:bg-hover_customarrow;
   }
 }
